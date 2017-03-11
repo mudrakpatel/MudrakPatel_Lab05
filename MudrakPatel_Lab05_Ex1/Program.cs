@@ -10,23 +10,63 @@ namespace MudrakPatel_Lab05_Ex1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            CustomList doubleList = new CustomList("doubleList");
-            for (int index = 0; index <= 12; index++) {
-                doubleList.InsertAtBack(index); // Call InsertAtBack method
-            }
-            Console.WriteLine("\n>>> Print list items using Display method:\n");
-            doubleList.Display(); // Call Display method
-            Console.WriteLine("\n>>> Clear the list and display contents:\n");
-            //foreach (var item in doubleList) {
-            //    doubleList.Remove(item);
+            /////////////////////////////
+            //Code given by teacher
+            #region oldCode
+            //var list = new CustomList(); // create List container
+
+            //// create data to store in List
+            //double[] doubleArray = { };
+
+            ////// use List insert methods       
+            ////list.InsertAtFront(aBoolean);
+            ////list.Display();
+            ////list.InsertAtFront(aCharacter);
+            ////list.Display();
+            ////list.InsertAtBack(anInteger);
+            ////list.Display();
+            ////list.InsertAtBack(aString);
+            ////list.Display();
+
+            //for (int index = 0; index < 12 ; index++)
+            //{
+            //    //doubleArray[index] = index;
+            //    list.AddFirst(new LinkedListNode<double>(index));
             //}
-            doubleList.Clear();
-            
-            //Console.WriteLine("\n>>> The list is empty now!\n---{0,2}", exception.Message);
-            Console.WriteLine("\n>>> Now the contents of the List are:\n");
-            doubleList.Display(); // Call Display method to prove that the List is empty
+
+            //// remove data from list and display after each removal
+            //try
+            //{
+            //    object removedObject = list.RemoveFromFront();
+            //    Console.WriteLine($"{removedObject} removed");
+            //    list.Display();
+
+            //    removedObject = list.RemoveFromFront();
+            //    Console.WriteLine($"{removedObject} removed");
+            //    list.Display();
+
+            //    removedObject = list.RemoveFromBack();
+            //    Console.WriteLine($"{removedObject} removed");
+            //    list.Display();
+
+            //    removedObject = list.RemoveFromBack();
+            //    Console.WriteLine($"{removedObject} removed");
+            //    list.Display();
+            //}
+            //catch (EmptyListException emptyListException)
+            //{
+            //    Console.Error.WriteLine($"\n{emptyListException}");
+            //}
+            #endregion
+            /////////////////////////////
+            var doubleList = new CustomList();
+            for (int index = 0; index < 12; index++)
+            {
+                doubleList.InsertAtBack(index);
+            }
+
         }
     }
 }
