@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//Import the custom LinkedListLibrary_Mudrak
+using LinkedListLibrary_Mudrak;
 
 namespace MudrakPatel_Lab05_Ex1
 {
@@ -10,6 +12,8 @@ namespace MudrakPatel_Lab05_Ex1
     {
         static void Main(string[] args)
         {
+            List doubleList = new List("doubleList");
+            
         }
     }
 }
