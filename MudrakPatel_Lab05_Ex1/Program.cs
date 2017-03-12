@@ -62,15 +62,13 @@ namespace MudrakPatel_Lab05_Ex1
             #endregion
             /////////////////////////////
             var doubleList = new CustomList();
-            var node1 = new CustomListNode(1.0, null);
-            //var node2 = new CustomListNode(2.0, node1);
-            //var node3 = new CustomListNode(3.0, node2);
-            //var node4 = new CustomListNode(4.0, node3);
-            //var node5 = new CustomListNode(5.0, node4);
-            //var node6 = new CustomListNode(6.0, node1);
+            for(int index = 0; index < 5; index++)
+            {
+                doubleList.InsertAtBack(new CustomListNode(index));
+            }
             Console.WriteLine("\n>>> Display method called...\n"); //Display method
             doubleList.Display();
-            Console.WriteLine("\n >>> The count of the list is: {0,2}\n", CustomList.Count(doubleList));
+            Console.WriteLine("\n >>> The count of the list is: {0,2}\n", doubleList.Count());
         }
     }
 }
