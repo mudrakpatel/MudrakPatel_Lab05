@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LinkedListLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="StackInheritanceLibrary">
       <HintPath>..\..\..\..\..\..\PC\Desktop\StackInheritanceLibrary\StackInheritanceLibrary\bin\Debug\StackInheritanceLibrary.dll</HintPath>
     </Reference>
