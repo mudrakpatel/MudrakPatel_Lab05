@@ -12,55 +12,6 @@ namespace MudrakPatel_Lab05_Ex1
     {
         static void Main()
         {
-            /////////////////////////////
-            //Code given by teacher
-            #region oldCode
-            //var list = new CustomList(); // create List container
-
-            //// create data to store in List
-            //double[] doubleArray = { };
-
-            ////// use List insert methods       
-            ////list.InsertAtFront(aBoolean);
-            ////list.Display();
-            ////list.InsertAtFront(aCharacter);
-            ////list.Display();
-            ////list.InsertAtBack(anInteger);
-            ////list.Display();
-            ////list.InsertAtBack(aString);
-            ////list.Display();
-
-            //for (int index = 0; index < 12 ; index++)
-            //{
-            //    //doubleArray[index] = index;
-            //    list.AddFirst(new LinkedListNode<double>(index));
-            //}
-
-            //// remove data from list and display after each removal
-            //try
-            //{
-            //    object removedObject = list.RemoveFromFront();
-            //    Console.WriteLine($"{removedObject} removed");
-            //    list.Display();
-
-            //    removedObject = list.RemoveFromFront();
-            //    Console.WriteLine($"{removedObject} removed");
-            //    list.Display();
-
-            //    removedObject = list.RemoveFromBack();
-            //    Console.WriteLine($"{removedObject} removed");
-            //    list.Display();
-
-            //    removedObject = list.RemoveFromBack();
-            //    Console.WriteLine($"{removedObject} removed");
-            //    list.Display();
-            //}
-            //catch (EmptyListException emptyListException)
-            //{
-            //    Console.Error.WriteLine($"\n{emptyListException}");
-            //}
-            #endregion
-            /////////////////////////////
             var doubleList = new CustomList();
             for(int index = 0; index < 5; index++)
             {
@@ -73,7 +24,21 @@ namespace MudrakPatel_Lab05_Ex1
             Console.WriteLine("\n>>> The count of the list is: {0,2}\n", CustomList.Count(doubleList));
             Console.WriteLine("\n>>> Search method called...\n");
             doubleList.Search(2); //Call Search method
-            Console.WriteLine("");
+            Console.WriteLine("\n>>> RemoveFromFront method called...\n");
+            doubleList.RemoveFromFront();
+            Console.WriteLine("\n>>> Display method called...\n");
+            doubleList.Display(); //Call Display method
+            Console.WriteLine("\n>>> RemoveFromBack method called...\n");
+            doubleList.RemoveFromBack();
+            Console.WriteLine("\n>>> Display method called...\n");
+            doubleList.Display(); //Call Display method
+            Console.WriteLine("\n>>> InsertAtFront method called...\n");
+            doubleList.InsertAtFront(10);
+            Console.WriteLine("\n>>> Display method called...\n");
+            doubleList.Display(); //Call Display method
+            Console.WriteLine("\n>>> Calling garbage collector...\n");
+            GC.WaitForPendingFinalizers();
+            GC.Collect();
         }
     }
 }
