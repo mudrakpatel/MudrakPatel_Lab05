@@ -31,6 +31,9 @@ namespace MudrakPatel_Lab05_Ex2
                 Console.WriteLine(); //Blank line
                 Console.WriteLine("\n>>> Called Peek method...\n");
                 Console.WriteLine("\n--- Peeked element: {0,2}\n", stackList.Peek()); //Call Peek method
+                Console.WriteLine("\n>>> Calling garbage collector...\n");
+                GC.WaitForPendingFinalizers();
+                GC.Collect();
             }
             catch (EmptyListException exception)
             {
