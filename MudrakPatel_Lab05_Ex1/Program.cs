@@ -64,11 +64,16 @@ namespace MudrakPatel_Lab05_Ex1
             var doubleList = new CustomList();
             for(int index = 0; index < 5; index++)
             {
-                doubleList.InsertAtBack(new CustomListNode(index));
+                doubleList.InsertAtBack(index); // Call InsertAtBack method
             }
-            Console.WriteLine("\n>>> Display method called...\n"); //Display method
-            doubleList.Display();
-            Console.WriteLine("\n >>> The count of the list is: {0,2}\n", doubleList.Count());
+            Console.WriteLine("\n>>> Display method called...\n");
+            doubleList.Display(); //Call Display method
+            ////
+            //Call CustomList.Count static method
+            Console.WriteLine("\n>>> The count of the list is: {0,2}\n", CustomList.Count(doubleList));
+            Console.WriteLine("\n>>> Search method called...\n");
+            doubleList.Search(2); //Call Search method
+            Console.WriteLine("");
         }
     }
 }
