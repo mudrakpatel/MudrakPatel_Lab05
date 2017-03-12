@@ -22,7 +22,7 @@ namespace MudrakPatel_Lab05_Ex2
             Console.WriteLine("\n>>> Called Display method...\n");
             stackList.Display();
             Console.WriteLine("\n>>> Called Pop method...\n");
-
+            Console.WriteLine("\n--- Popped element: {0,2}\n", stackList.Pop());
         }
     }
 }
